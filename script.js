@@ -43,3 +43,32 @@ function gameEngine() {
 
 // main logic start here
 window.requestAnimationFrame(main);
+window.addEventListener("keydown", (e) => {
+  inputDir = { x: 2, y: 6 };
+  foodSound.play();
+  switch (e.key) {
+    case "ArrowUp":
+      inputDir.x = 0;
+      inputDir.y = -1;
+      console.log("ArrowUp");
+      break;
+    case "ArrowDown":
+      inputDir.x = 0;
+      inputDir.y = 1;
+      console.log("ArrowDown");
+      break;
+    case "ArrowRight":
+      inputDir.x = 1;
+      inputDir.y = 0;
+      console.log("ArrowRight");
+      break;
+    case "ArrowLeft":
+      inputDir.x = -1;
+      inputDir.y = 0;
+      console.log("ArrowLeft");
+      break;
+    default:
+      break;
+  }
+  console.log(inputDir);
+});
