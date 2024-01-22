@@ -23,11 +23,15 @@
 }
 
 .snake-head {
-  background-color: red;
+  font-size: 25px;
+  background-size: cover;
 }
 .snake-body {
-  background-color: rgb(171, 14, 255);
+  background: url("https://thumbs.dreamstime.com/z/snake-skin-seamless-pattern-background-26527651.jpg");
+  background-size: cover;
+  border-radius: 4px;
 }
+
 .food {
   background-color: rgb(239, 255, 8);
 }
